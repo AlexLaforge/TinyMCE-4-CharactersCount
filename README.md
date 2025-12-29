@@ -100,5 +100,5 @@ You may override these styles in your own stylesheet if needed.
 
 ## License
 
-- GPL-3.0 license
-- Please retain original Copyright.
+- MIT license
+- Must retain original Copyright.
