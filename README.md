@@ -60,6 +60,8 @@ tinymce.init({
 
 ## Public API (Optional)
 
+If you need to access the count from your own JS code, you can use this API :
+
 ```javascript
 var counts = tinymce.activeEditor.plugins.characterscount.getCounts();
 
