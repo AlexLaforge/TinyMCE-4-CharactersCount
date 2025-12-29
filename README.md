@@ -2,6 +2,8 @@
 
 A lightweight character counter plugin for **TinyMCE 4**, displaying live character counts for editor content.
 
+![TinyMCE 4 Characters Count Plugin](TinyMCE-4-CharactersCount-001.png)
+
 ## Features
 
 - Counts characters from:
