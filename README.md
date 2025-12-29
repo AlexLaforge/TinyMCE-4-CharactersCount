@@ -38,8 +38,13 @@ tinymce/
 ```javascript
 tinymce.init({
   selector: 'textarea',
+  statusbar: true,
   plugins: 'characterscount',
-  statusbar: true
+
+  //Optional Properties
+  characterscount_debounce: 300,
+  characterscount_show_text: true,
+  characterscount_show_source: false,
 });
 ```
 
@@ -47,9 +52,11 @@ tinymce.init({
 
 ## Options
 
-- `characterscount_debounce` : Delay before refreshing the counters (in ms)
-- `characterscount_show_text` : Boolean to specify wether the TEXT counter should be included (`true|false` - default is set to `true`)
-- `characterscount_show_source` : Boolean to specify wether the SOURCE counter should be included (`true|false` - default is set to `true`)
+| Property     | Type   | Default    | Description    |
+|:---------|:--------:|---------:|:---------|
+| `characterscount_debounce`        | Number        | `250`        | Delay before refreshing the counters (in ms)        |
+| `characterscount_show_text`        | Boolean        | `true`        | Boolean to specify wether the TEXT counter should be included        |
+| `characterscount_show_source`        | Boolean        | `true`        | Boolean to specify wether the SOURCE counter should be included        |
 
 ## Public API (Optional)
 
@@ -78,8 +85,8 @@ characterscount/langs/
 ```
 
 TinyMCE automatically loads the appropriate language based on the editor configuration.
-Be careful about languages that can be used with or without region spécification (for example `fr` and `fr_FR`).
-Simply duplicate the files to ensure a full compatibility with your locale.
+Be careful about languages that can be used with or without region specification (for example `fr` and `fr_FR`).
+Simply duplicate these files to ensure a full compatibility with your locale.
 
 ## Styling
 
