@@ -1,0 +1,7 @@
+/* TINYMCE PLUGIN : CHARACTERS COUNT */
+.mce-characterscount{
+	font-size: inherit!important;
+	text-transform: uppercase!important;
+	padding: 8px 0!important;
+	margin-right: 16px!important;
+}
